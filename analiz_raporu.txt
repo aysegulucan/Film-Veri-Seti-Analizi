@@ -1,0 +1,86 @@
+
+IMDb FİLM ANALİZİ - OTOMATİK RAPOR
+===================================================
+Rapor Oluşturma Tarihi: 2025-11-15 03:13:12
+Analiz Edilen Dosya: movies_initial.csv
+===================================================
+
+GİRİŞ
+---------------------------------------------------
+Bu rapor, 'movies_initial.csv' adlı veri setinin otomatik analizini sunmaktadır.
+Rapor, uygulanan veri temizleme adımlarını ve keşifsel veri analizi (EDA)
+sonucunda elde edilen temel bulguları içermektedir.
+
+Tüm destekleyici grafikler bu raporla aynı klasörde ('.png' formatında)
+kayıtlıdır ve bulguların görsel yorumlaması için kullanılmalıdır.
+
+
+AŞAMA 1: VERİ TEMİZLEME VE HAZIRLIK RAPORU
+---------------------------------------------------
+Analiz için ham veri seti üzerinde aşağıdaki adımlar uygulanmıştır:
+(Not: Temizlenmiş ara veri dosyası diske kaydedilmemiştir.)
+
+1. Ham Veri Yüklendi: 'movies_initial.csv' dosyasından 46,014 kayıt okundu.
+2. Filtreleme: Sadece 'movie' tipindeki 45,585 kayıt tutuldu. Diğer tipler (örn: 'series') analiz dışı bırakıldı.
+3. Eksik Veri Temizliği: Kritik bilgi (puan, süre, yıl vb.) eksik olan 3,392 kayıt silindi.
+4. 'runtime' Sütunu Temizlendi: Metin formatı (örn: '120 min') sayısal (120) tamsayıya dönüştürüldü.
+5. 'year' Sütunu Temizlendi: Metin formatı (örn: '1990-1991') sayısal (1990) tamsayıya dönüştürüldü.
+6. 'genre' Sütunu Temizlendi: Birden fazla tür (örn: 'Comedy, Drama') ana türe ('Comedy') indirgendi.
+
+TEMİZLİK SONUCU: 46,014 ham kayıttan, analiz için uygun 42,176 temiz film verisi elde edildi.
+
+
+AŞAMA 2: KEŞİFSEL VERİ ANALİZİ (EDA) - DİNAMİK BULGULAR
+---------------------------------------------------
+Temizlenmiş veri seti (Toplam 42,176 film) üzerinden 
+elde edilen bulgular aşağıdadır:
+
+1. GENEL BAKIŞ VE PUAN DAĞILIMI
+   - Analiz edilen filmlerin ortalama IMDb puanı: 6.37
+   - Medyan (Orta Değer) Puan: 6.60
+   - Standart Sapma (Puan Dağılımı): 1.17
+   - (Detaylı dağılım için bkz: 1_puan_dagilimi.png)
+
+2. FİLM SÜRESİ ANALİZİ (0-240 Dk Arası Filmler)
+   - Ortalama film süresi: 96.08 dakika
+   - Medyan (Orta Değer) Süre: 95 dakika
+   - (Detaylı dağılım için bkz: 2_sure_dagilimi.png)
+
+3. SÜRE-PUAN İLİŞKİSİ (0-240 Dk Arası Filmler)
+   - Süre ve Puan arasındaki (Pearson) Korelasyon Katsayısı: 0.1036
+   - (Korelasyon -1 ile 1 arasındadır. 0'a yakın olması zayıf ilişki, 1'e yakın 
+     olması güçlü pozitif ilişki anlamına gelir.)
+   - (İlişkinin yoğunluk haritası için bkz: 5_sure_puan_iliskisi.png)
+
+4. TÜR ANALİZİ
+   - Veri setindeki en popüler (en çok filme sahip) 10 tür:
+genre
+Drama          10633
+Comedy         10287
+Action          4881
+Documentary     3670
+Crime           2599
+Horror          2224
+Animation       1753
+Adventure       1707
+Biography       1154
+Short            595
+
+   - PUAN BAŞARISI (En az 100 filme sahip türler):
+     (Ortalama puana göre sıralanmış türlerin grafiği için bkz: 3_tur_puan_ortalamasi.png)
+
+5. YÖNETMEN ANALİZİ
+   - En başarılı yönetmenler (8.0+ Puanlı Film Sayısına Göre, en az 10 film yönetenler):
+     (Yönetmen başarı sıralaması için bkz: 4_en_basarili_yonetmenler.png)
+
+6. YILLARA GÖRE TRENDLER
+   - Yıllara göre ortalama puan değişimleri için (bkz: 6_yillara_gore_puan.png).
+   - Trend analizi (10 yıllık hareketli ortalama) grafiğe eklenmiştir.
+
+
+SONUÇ
+---------------------------------------------------
+Rapor tamamlanmıştır. Tüm bulgular, movies_initial.csv dosyasından elde edilen
+verilere dayanmaktadır ve 'analiz' klasöründeki grafiklerle desteklenmektedir.
+
+*** Rapor Sonu ***
