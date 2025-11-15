@@ -44,15 +44,15 @@ Script'in ürettiği bazı kilit grafikler:
 
 #### 1. En Yüksek Puanlı Türler
 (Belgesel, Biyografi ve Animasyon'un baskınlığı net olarak görülmektedir.)
-![En Yüksek Puanlı Türler Grafiği](ornek_ciktilar/3_tur_puan_ortalamasi.png)
+![En Yüksek Puanlı Türler Grafiği](3_tur_puan_ortalamasi.png)
 
 #### 2. Yıllara Göre Puan Trendleri
 (Turuncu çizgi, 10 yıllık hareketli ortalamayı göstererek genel trendi vurgulamaktadır.)
-![Yıllara Göre Puan Grafiği](ornek_ciktilar/6_yillara_gore_puan.png)
+![Yıllara Göre Puan Grafiği](6_yillara_gore_puan.png)
 
 #### 3. Süre-Puan İlişkisi
 (Yoğunluk haritası, filmlerin çoğunun 90-120 dakika bandında ve 6.0-7.5 puan aralığında kümelendiğini göstermektedir.)
-![Süre-Puan İlişkisi Grafiği](ornek_ciktilar/5_sure_puan_iliskisi.png)
+![Süre-Puan İlişkisi Grafiği](5_sure_puan_iliskisi.png)
 
 ---
 
@@ -68,9 +68,9 @@ Temizleme adımlarının özetinin (örn: kaç verinin neden silindiği) ve tüm
     pip install pandas numpy matplotlib seaborn
     ```
 3.  Veri setini [bu Kaggle linkinden](https://www.kaggle.com/datasets/samruddhim/imdb-movies-analysis) indirin (`movies_initial.csv`).
-4.  `projeuc.py` (veya script'inizin adı neyse) dosyasını çalıştırın:
+4.  `film_analizi.py` (veya script'inizin adı neyse) dosyasını çalıştırın:
     ```bash
-    python projeuc.py
+    python film_analizi.py
     ```
 5.  Script sizden `.csv` dosyasının tam yolunu istediğinde, indirdiğiniz dosyanın yolunu belirtin.
 
