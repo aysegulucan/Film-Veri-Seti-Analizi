@@ -1,7 +1,7 @@
 
 IMDb FİLM ANALİZİ - OTOMATİK RAPOR
 ===================================================
-Rapor Oluşturma Tarihi: 2025-11-15 03:13:12
+Rapor Oluşturma Tarihi: 
 Analiz Edilen Dosya: movies_initial.csv
 ===================================================
 
@@ -84,3 +84,4 @@ Rapor tamamlanmıştır. Tüm bulgular, movies_initial.csv dosyasından elde edi
 verilere dayanmaktadır ve 'analiz' klasöründeki grafiklerle desteklenmektedir.
 
 *** Rapor Sonu ***
+
