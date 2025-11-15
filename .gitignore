@@ -1,0 +1,10 @@
+# Python sanal ortamı 
+.venv/
+venv/
+__pycache__/
+
+# Script'in ürettiği çıktı klasörü 
+analiz/
+
+# İşletim sistemi dosyaları
+.DS_Store
